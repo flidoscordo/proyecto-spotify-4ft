@@ -9,4 +9,5 @@ class Reproduccion(Base):
     id = Column(Integer, primary_key=True)
     usuario_id = Column(Integer, nullable=False)
     cancion_id = Column(Integer, nullable=False)
-    #queda terminarlo
+    fecha = Column(DateTime)
+    segundos_escuchados = Column(Integer, nullable=False)
