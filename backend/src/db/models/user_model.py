@@ -9,7 +9,6 @@ class User(Base):
 
     id = Column(Integer, primary_key=True)
     email = Column(String, unique=True, nullable=False)
-    password_hash = Column(String, nullable=False)
-    age = Column(Integer, nullable=False)
-    is_admin = Column(Boolean, default=False)
-    created_at = Column(DateTime, server_default=func.now())
+    nombre= Column(String, unique=True, nullable=False)
+    fecha_registro= Column(DateTime)
+    tipo_plan= Column(nullable=False)
