@@ -8,7 +8,7 @@ class CreatePlaylistCancionesSchema(BaseModel):
     
 
 class UpdatePlaylistcancionesSchema(BaseModel):
-    orden: int = Field() 
+    orden: int = Field(default=None, ge=1) 
 
 class ReadPlaylistCancionesSchema(BaseModel):
     playlist_id: int
