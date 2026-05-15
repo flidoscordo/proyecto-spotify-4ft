@@ -9,7 +9,7 @@ class Playlist(Base):
     id = Column(Integer, primary_key=True)
     nombre = Column(String, nullable=False)
     usuario_id = Column(Integer, nullable=False)
-    fecha_creacion = Column(DateTime, server_default=func.now())
+    fecha_creacion = Column(DateTime,)
     es_publica = Column(Boolean, default=True)
     es_colaborativa = Column(Boolean, default=False)
 #revisar
