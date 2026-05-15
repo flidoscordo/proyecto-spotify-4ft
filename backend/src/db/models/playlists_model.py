@@ -12,3 +12,4 @@ class Playlist(Base):
     fecha_creacion = Column(DateTime, server_default=func.now())
     es_publica = Column(Boolean, default=True)
     es_colaborativa = Column(Boolean, default=False)
+#revisar
