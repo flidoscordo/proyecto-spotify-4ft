@@ -1,4 +1,6 @@
-from pydantic import BaseModel, EmailStr, Field, datetime
+from pydantic import BaseModel, EmailStr, Field
+from datetime import datetime
+from typing import Optional
 
 
 class CreatePlaylistCancionesSchema(BaseModel):
@@ -7,8 +9,8 @@ class CreatePlaylistCancionesSchema(BaseModel):
     orden: int = Field(ge=1)
     
 
-class UpdatePlaylistcancionesSchema(BaseModel):
-    orden: int = Field(default=None, ge=1) 
+class UpdatePlaylistCancionesSchema(BaseModel):
+    orden: Optional[int] = Field(default=None, ge=1) 
 
 class ReadPlaylistCancionesSchema(BaseModel):
     playlist_id: int
