@@ -8,9 +8,7 @@ class CreatePlaylistCancionesSchema(BaseModel):
     
 
 class UpdatePlaylistcancionesSchema(BaseModel):
-    # TODO: completar con los campos opcionales que se permiten actualizar.
-    # Tip: todos los campos van como Optional / con default None.
-    ...
+    orden: int = Field() 
 
 class ReadPlaylistCancionesSchema(BaseModel):
     playlist_id: int
