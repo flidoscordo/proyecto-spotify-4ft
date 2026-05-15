@@ -1,6 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime
 from sqlalchemy.sql import func
-from backend.src.db.models.artists_model import Artists
 from src.db.connection import Base
 
 
